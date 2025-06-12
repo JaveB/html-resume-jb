@@ -1,12 +1,25 @@
 body{
   background-image: url(../assets/bgs.jpg);
   background-repeat: no-repeat;
-  background-size: 1500px;
+  background-size: 2000px;
 
 }
 
 .fit-picture {
   width: 200px;
+}
+h3, h4 {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+h3 {
+  margin-bottom: 4px; /* or even 2px if you want it tighter */
+}
+
+h4 {
+  margin-top: 0;
 }
 hr {
   display: block;
