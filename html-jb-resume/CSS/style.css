@@ -1,0 +1,29 @@
+body{
+  background-image: url(../assets/bgs.jpg);
+  background-repeat: no-repeat;
+  background-size: 1500px;
+
+}
+
+.fit-picture {
+  width: 200px;
+}
+hr {
+  display: block;
+  margin: top 13px;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 2px;
+}
+h1{
+    color: rgb(0, 0, 78);
+    text-align: center;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
