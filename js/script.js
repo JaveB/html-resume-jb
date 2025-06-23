@@ -38,26 +38,19 @@ if (SKY) {
 
     
   }  
-// ========== Floating Emojis in Random Directions ==========
+// ========== Floating Space Emojis ==========
 const emojis = ["🚀", "🌌", "🪐", "🌠", "🌟"];
-const emojiCount = 12; // keep it light to avoid lag
+const emojiCount = 15;
 
 for (let i = 0; i < emojiCount; i++) {
   const emoji = document.createElement('div');
   emoji.classList.add('emoji');
   emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
 
-  // Random starting position on screen
+  // Random start position and size
   emoji.style.left = `${Math.random() * 100}vw`;
   emoji.style.top = `${Math.random() * 100}vh`;
-
-  // Random animation direction class
-  const directions = ['float-up', 'float-down', 'float-left', 'float-right'];
-  const dir = directions[Math.floor(Math.random() * directions.length)];
-  emoji.classList.add(dir);
-
-  // Random duration and size
-  emoji.style.animationDuration = `${10 + Math.random() * 10}s`;
+  emoji.style.animationDuration = `${8 + Math.random() * 10}s`;
   emoji.style.fontSize = `${1 + Math.random() * 2}rem`;
 
   document.body.appendChild(emoji);
